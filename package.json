@@ -1,0 +1,21 @@
+{
+  "name": "spa",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "npm run less; npm run bundle",
+    "bundle": "bash scripts/bundle.sh",
+    "dev": "bash scripts/dev.sh",
+    "less": "bash scripts/less.sh",
+    "lint": "bash scripts/lint.sh",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.25",
+    "husky": "^7.0.4",
+    "less": "^4.1.2",
+    "postcss-less": "^6.0.0",
+    "standard": "^16.0.4",
+    "stylelint": "^14.5.3",
+    "stylelint-config-standard": "^25.0.0"
+  }
+}
