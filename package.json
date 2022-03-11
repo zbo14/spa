@@ -2,10 +2,10 @@
   "name": "spa",
   "version": "0.0.1",
   "scripts": {
-    "build": "npm run less; npm run bundle",
+    "build": "npm run compile-css; npm run bundle",
     "bundle": "bash scripts/bundle.sh",
+    "compile-css": "bash scripts/compile-css.sh",
     "dev": "bash scripts/dev.sh",
-    "less": "bash scripts/less.sh",
     "lint": "bash scripts/lint.sh",
     "prepare": "husky install"
   },

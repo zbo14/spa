@@ -1,7 +1,10 @@
 #!/bin/bash
 
+port=${1:-8000}
+addr=${2:-127.0.0.1}
+
 cd "$(dirname "$0")"/../public
-python3 -m http.server --bind 0.0.0.0 8000 &
+python3 -m http.server --bind "$addr" "$port" &
 cd ../src
 
 trap 'pkill -P "$$"' SIGHUP SIGINT SIGTERM
